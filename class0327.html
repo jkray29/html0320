@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class0327</title>
+    <style>
+        table {
+            width: 50%;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border:1px solid #000;
+        }
+        thead{
+            border:2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <button id="do-btn">Click Me</button>
+
+    <script>
+        let btn = document.querySelector('#do-btn')
+
+        btn.addEventListener('click', (e) => {
+            alert('You click me!')
+        })
+    </script>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <h1>使用table插入表格</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年齡</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>糟老頭</th>
+                <th>88</th>
+            </tr>
+            <tr>
+                <th>江小莉</th>
+                <th>17</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>使用iframe插入地圖</h1>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14562.106441634129!2d120.67749419999998!3d24.15325755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d78069134cb%3A0xf7a65bba8f974f36!2z5ZyL56uL6Ieq54S256eR5a245Y2a54mp6aSo!5e0!3m2!1szh-TW!2stw!4v1679916230258!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <h1>使用iframe插入影片</h1>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xSbeUixi22o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+    <h1>System Login</h1>
+    <form method="get" action="https://book.niceinfos.com/frontend/assets/html_file_upload/response.php">
+        <div>
+            帳號<input type="text" name="acc">
+        </div>
+        <div>
+            密碼<input type="password" name="pwd">
+        </div>
+        <div>
+            電話<input type="number" name="valid">
+        </div>
+        <div>
+            <input type="tel" name="phone">
+        </div>
+        <div>
+            <input type="color" name="bg_color">
+        </div>
+        <div>
+            <input type="date" name="schedule_date">
+        </div>
+        <div>
+            <input type="time" name="schedule_time">
+        </div>
+        <div>
+            <input type="file" name="my_pic">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+        <button>Login</button>
+    </form>
+
+    <form method="post" action="">
+        <button>PPPP</button>
+    </form>
+
+
+    <form method="post" enctype="multipart/form-data" action="https://book.niceinfos.com/frontend/assets/html_file_upload/response.php">
+        <input type="file" name="my_pic">
+        <button>上傳圖片</button>
+    </form>
+</body>
+</html>
