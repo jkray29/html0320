@@ -109,5 +109,49 @@
         <input type="file" name="my_pic">
         <button>上傳圖片</button>
     </form>
+<h1>單選</h1>
+    <form action="">
+        <input type="radio" name="gender" value="male" /> 男
+        <input type="radio" name="gender" value="female" /> 女
+        <button></button>
+    </form>
+
+<h1>多選</h1>
+    <form action="">
+        <input type="checkbox" name="play[]" value="baseball" id="ball-1">
+        <label for="ball-1">棒球</label>
+        <input type="checkbox" name="play[]" value="basketball" id="ball-2">
+        <label for="ball-2">籃球</label>
+        <button>興趣</button>
+    </form>
+
+<h1>下拉式選單</h1>
+    <h3>單選</h3>
+    <form action="">
+        <select name="city">
+            <option value="">選擇縣市</option>
+            <option value="TP">台北</option>
+            <option value="台中">台中</option>
+            <option>高雄</option>
+        </select>
+        <button>提交</button>
+    </form>
+    <h3>多選</h3>
+    <form action="">
+        <select name="city[]" multiple>
+            <option value="">選擇縣市</option>
+            <option value="TP">台北</option>
+            <option value="台中">台中</option>
+            <option>高雄</option>
+        </select>
+        <button>提交</button>
+    </form>
+
+<h1>多行輸入</h1>
+    <form action="">
+        <textarea name="remark" id="" cols="50" rows="30">
+        </textarea>
+    </form>
+    <button>提交</button>
 </body>
 </html>
