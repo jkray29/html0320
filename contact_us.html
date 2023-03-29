@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML contact us</title>
+    <link rel="stylesheet" href="css/contact_us.css">
+</head>
+
+<body>
+    <form id="contact-form" method="post" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php">
+        <div>
+            <div>
+                <label for="fullname">全名</label>
+            </div>
+            <div>
+                <input type="text" name="fullname" id="fullname" class="input-text">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="gender" class="label">性別</label>
+            </div>
+            <div>
+                <input type="radio" class="radio" name="gender" id="gender-m">
+                <label for="gender-m">男</label>
+                <input type="radio" class="radio" name="gender" id="gender-f">
+                <label for="gender-f">女</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="">喜好音樂</label>
+            </div>
+            <div>
+                <input type="checkbox" name="music[]" id="music-pop">
+                <label for="music-pop">Pop</label>
+                <input type="checkbox" name="music[]" id="music-jazz">
+                <label for="music-jazz">Jazz</label>
+                <input type="checkbox" name="music[]" id="music-rock">
+                <label for="music-rock">Rock</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="city">縣市</label>
+            </div>
+            <div>
+                <select name="city" id="city">
+                    <option value="">選擇縣市</option>
+                    <option>台北</option>
+                    <option>台中</option>
+                    <option>高雄</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="remark">其他建議</label>
+            </div>
+            <div>
+                <textarea name="remark" id="remark"></textarea>
+            </div>
+        </div>
+
+        <div class="fn">
+            <button>提交</button>
+        </div>
+    </form>
+</body>
+
+</html>

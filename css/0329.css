@@ -1,0 +1,13 @@
+button{
+    background-color: rgb(255, 142, 127);
+    color: blue;
+}
+
+#fistid{
+    height: 60px;
+}
+
+.twoclass{
+    height: 30px;
+    width: 120px;
+}
