@@ -347,3 +347,8 @@
   [hidden] {
     display: none;
   }
+
+  .gender:checked {
+    width: 30px;
+    height: 30px;
+}
