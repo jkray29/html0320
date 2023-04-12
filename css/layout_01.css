@@ -1,0 +1,28 @@
+.table {
+    width: 90%;
+    margin: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table td,
+.table th {
+    border: 1px solid #dedede;
+    padding: 10px;
+}
+
+.table tbody tr {
+    background: #dedede;
+}
+
+/* 單數 */
+.table tbody tr:nth-child(odd) {
+    background: blue;
+}
+
+/* 雙數 */
+.table tbody tr:nth-child(even) {
+    background: red;
+}
