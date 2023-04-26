@@ -113,7 +113,7 @@ html {
   justify-content: space-between;
   background-color: rgb(5, 47, 138);
   color: #fff;
-  height: 300px;
+  height: 350px;
 }
 
 .join-form .join-form-wrap .join-form-content>div {
@@ -252,17 +252,6 @@ html {
   left: calc(50% + 50px);
   background: rgb(0, 60, 255);
   padding: 20px;
-  border-radius: 6px;
-}
-
-.flow .item .text h4 {
-  margin-bottom: 15px;
-}
-
-.flow .item:nth-child(even) .text {
-  left: unset;
-  right: calc(50% + 50px);
-  text-align: right;
 }
 
 /*# sourceMappingURL=css_layout.css.map */

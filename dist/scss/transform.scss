@@ -34,3 +34,39 @@
     font-size: 30px;
     font-weight: 800;
 }
+
+.product {
+    margin-top: 100px;
+    display: block;
+    background: #dedede;
+    padding: 10px;
+    width: 300px;
+    height: 500px;
+
+
+    .product-img {
+        width: 100%;
+        height: 200px;
+        background: rgb(45, 131, 243);
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+
+        .product-discount {
+            position: absolute;
+            top: 36px;
+            right: -95px;
+            color: red;
+            background: rgb(255, 255, 255);
+            width: 100%;
+            text-align: center;
+            transform: rotate(45deg);
+            font-size: 18px;
+        }
+    }
+}

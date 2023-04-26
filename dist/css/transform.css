@@ -1,49 +1,80 @@
 *,
 *::after,
 *::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .container {
-    max-width: 500px;
-    height: 100%;
-    position: relative;
-    margin: auto;
+  max-width: 500px;
+  height: 100%;
+  position: relative;
+  margin: auto;
 }
 
 .rotate {
-    transform: rotate(315deg);
-    display: inline-flex;
-    width: 100px;
-    height: 100px;
-    margin-top: 50px;
-    background-color: red;
-    color: yellow;
+  transform: rotate(245deg);
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  background-color: red;
+  color: yellow;
 }
 
 .sp {
-    transform: rotate(45deg);
-    display: flex;
-    width: 100px;
-    height: 100px;
-    margin-top: 150px;
-    background-color: red;
-    color: yellow;
-    justify-content: center;
-    align-items: center;
+  transform: rotate(45deg);
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-top: 150px;
+  background-color: red;
+  color: yellow;
+  justify-content: center;
+  align-items: center;
 }
 
-.sp>span {
-    transform: rotate(135deg);
-    font-size: 30px;
-    font-weight: 800;
+.sp > span {
+  transform: rotate(135deg);
+  font-size: 30px;
+  font-weight: 800;
 }
 
-/*# sourceMappingURL=transform.css.map */
+.product {
+  margin-top: 100px;
+  display: block;
+  background: #dedede;
+  padding: 10px;
+  width: 300px;
+  height: 500px;
+}
+.product .product-img {
+  width: 100%;
+  height: 200px;
+  background: rgb(45, 131, 243);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.product .product-img .product-discount {
+  position: absolute;
+  top: 36px;
+  right: -95px;
+  color: red;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+  transform: rotate(45deg);
+  font-size: 18px;
+}/*# sourceMappingURL=transform.css.map */
