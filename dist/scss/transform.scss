@@ -57,6 +57,12 @@
         position: relative;
         overflow: hidden;
 
+        &:hover {
+            >div:first-child {
+                transform: scale(2);
+            }
+        }
+
         .product-discount {
             position: absolute;
             top: 36px;

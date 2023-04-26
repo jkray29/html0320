@@ -67,6 +67,9 @@ a {
   position: relative;
   overflow: hidden;
 }
+.product .product-img:hover > div:first-child {
+  transform: scale(2);
+}
 .product .product-img .product-discount {
   position: absolute;
   top: 36px;
