@@ -1,0 +1,36 @@
+@import 'reset';
+
+.container {
+    max-width: 500px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.rotate {
+    transform: rotate(245deg);
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    background-color: red;
+    color: yellow;
+}
+
+.sp {
+    transform: rotate(45deg);
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-top: 150px;
+    background-color: red;
+    color: yellow;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp>span {
+    transform: rotate(135deg);
+    font-size: 30px;
+    font-weight: 800;
+}
