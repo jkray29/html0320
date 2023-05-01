@@ -31,7 +31,6 @@ html {
   z-index: 99;
   width: 100%;
 }
-
 .header .header-content {
   background: rgb(255, 255, 255);
   display: flex;
@@ -42,27 +41,22 @@ html {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
-
 .header .header-content .menu ul {
   list-style-type: none;
   display: flex;
 }
-
 .header .header-content .menu ul li {
   text-align: center;
   margin-right: 15px;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 18px;
 }
-
 .header .header-content .menu ul li:hover {
   color: rgb(47, 47, 248);
 }
-
 .header .header-content .menu ul li:last-child {
   margin-right: 0;
 }
-
 .header .header-content .menu ul li .en {
   text-transform: uppercase;
   font-size: 14px;
@@ -74,7 +68,6 @@ html {
   background: #fff;
   height: 100px;
 }
-
 .footer .footer-content {
   display: flex;
   justify-content: flex-end;
@@ -89,7 +82,6 @@ html {
   background-size: cover;
   position: relative;
 }
-
 .join-form::before {
   content: "";
   width: 100%;
@@ -99,14 +91,12 @@ html {
   left: 0;
   background: rgba(0, 0, 0, 0.356);
 }
-
 .join-form .join-form-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-
 .join-form .join-form-wrap .join-form-content {
   width: 100%;
   display: flex;
@@ -115,16 +105,13 @@ html {
   color: #fff;
   height: 350px;
 }
-
-.join-form .join-form-wrap .join-form-content>div {
+.join-form .join-form-wrap .join-form-content > div {
   width: 50%;
   padding: 30px;
 }
-
 .join-form .join-form-wrap .join-form-content .join-form-left-side {
   position: relative;
 }
-
 .join-form .join-form-wrap .join-form-content .join-form-left-side::before {
   content: "";
   position: absolute;
@@ -133,16 +120,13 @@ html {
   right: 0;
   top: 30px;
 }
-
 .join-form .join-form-wrap .join-form-content .text-content {
   line-height: 30px;
   text-align: justify;
 }
-
 .join-form .join-form-wrap .join-form-content .form-control {
   margin-bottom: 15px;
 }
-
 .join-form .join-form-wrap .join-form-content .form-control input {
   width: 100%;
   height: 40px;
@@ -153,7 +137,6 @@ html {
   font-size: 20px;
   border-radius: 4px;
 }
-
 .join-form .join-form-wrap .join-form-content .join-form-submit {
   text-align: right;
 }
@@ -166,12 +149,10 @@ html {
   font-weight: 600;
   cursor: pointer;
 }
-
 .button.primary {
   background: #1042cc;
   color: #fff;
 }
-
 .button.primary:hover {
   background: #285ef3;
 }
@@ -183,7 +164,6 @@ html {
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
-
 .slogan::after {
   content: "";
   position: absolute;
@@ -205,7 +185,6 @@ html {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
 .courses::before {
   content: "";
   width: 100%;
@@ -220,7 +199,6 @@ html {
   position: relative;
   z-index: 2;
 }
-
 .flow .item {
   display: flex;
   justify-content: center;
@@ -228,7 +206,6 @@ html {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .flow .item::before {
   content: "";
   position: absolute;
@@ -237,7 +214,6 @@ html {
   top: 0;
   border-left: 4px dashed #fff;
 }
-
 .flow .item .circle {
   width: 30px;
   height: 30px;
@@ -246,12 +222,9 @@ html {
   position: relative;
   z-index: 2;
 }
-
 .flow .item .text {
   position: absolute;
   left: calc(50% + 50px);
   background: rgb(0, 60, 255);
   padding: 20px;
-}
-
-/*# sourceMappingURL=css_layout.css.map */
+}/*# sourceMappingURL=css_layout.css.map */
