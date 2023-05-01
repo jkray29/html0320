@@ -1,0 +1,12 @@
+@import 'reset';
+
+.img-block {
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

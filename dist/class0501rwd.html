@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+    <link rel="stylesheet" href="css/rwd.css">
+    <link rel="stylesheet" href="css/rwd_print.css">
+</head>
+
+<body>
+    <div class="img-block">
+        <img src="image/dog.jpeg" alt="">
+    </div>
+    <div class="container">
+        <h1 class="title">學生成績表</h1>
+        <div class="func">
+            <button onclick="doPrint()">列印</button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>成績</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<script>
+    function doPrint() {
+        window.print();
+    }
+</script>
+
+</html>

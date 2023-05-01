@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.img-block {
+  width: 1000px;
+  height: 1000px;
+  background-color: red;
+}
+.img-block img {
+  max-width: 100%;
+  height: auto;
+}/*# sourceMappingURL=rwd.css.map */

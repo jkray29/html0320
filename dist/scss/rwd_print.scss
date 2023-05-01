@@ -1,0 +1,59 @@
+@import 'reset';
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th {
+        background: #3669d8;
+        color: #fff;
+    }
+
+    th,
+    td {
+        border: 1px solid #000;
+        padding: 10px;
+    }
+
+    td:last-child {
+        text-align: right;
+    }
+}
+
+.func {
+    text-align: right;
+    margin-bottom: 20px;
+
+    button {
+        padding: 10px 20px;
+        border: 0;
+        background: #3669d8;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 800;
+        cursor: pointer;
+
+        &:hover {
+            background: #fda623;
+        }
+    }
+}
+
+@media print {
+    .func {
+        display: none;
+    }
+}
