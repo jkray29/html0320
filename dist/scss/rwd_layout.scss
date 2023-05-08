@@ -1,0 +1,218 @@
+@import 'reset';
+
+body,
+html {
+    background: #000;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 900px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+
+    .header-content {
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: 100px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        #mobile-switch-box {
+            display: none;
+        }
+
+        .menu {
+            ul {
+                list-style-type: none;
+                display: flex;
+
+                li {
+                    text-align: center;
+                    margin-right: 15px;
+                    font-family: 'Noto Sans TC', sans-serif;
+                    font-size: 18px;
+
+                    &:hover {
+                        color: rgb(47, 47, 248);
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    .en {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: 800;
+                        font-family: 'Courier New', Courier, monospace;
+                    }
+                }
+            }
+        }
+
+        .mobile-switch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            display: none;
+
+            >span {
+                width: 30px;
+                height: 5px;
+                background: #000;
+                margin-bottom: 5px;
+                border-radius: 5px;
+                transition: 0.3s;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &:hover {
+                >span {
+                    background: rgb(255, 57, 42);
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background: #fff;
+    height: 100px;
+
+    .footer-content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.join-form {
+    height: 100vh;
+    background-color: rgb(41, 41, 41);
+    background-image: url(../images/banner.jpeg);
+    background-size: cover;
+    position: relative;
+
+    // .join-form::before
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.356);
+    }
+
+    .join-form-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .join-form-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(5, 47, 138);
+            color: #fff;
+            height: 350px;
+
+            >div {
+                width: 50%;
+                padding: 30px;
+            }
+
+            .join-form-left-side {
+                position: relative;
+
+                // .join-form-left-side::before
+                &::before {
+                    content: '';
+                    position: absolute;
+                    border-left: 3px dashed #fff;
+                    height: calc(100% - 60px);
+                    right: 0;
+                    top: 30px;
+                }
+            }
+
+            .text-content {
+                line-height: 30px;
+                height: 75%;
+                text-align: justify;
+                overflow: hidden;
+                position: relative;
+
+                .text-more {
+                    position: absolute;
+                    width: 100%;
+                    height: 40px;
+                    background: rgb(255, 255, 255);
+                    color: #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    left: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                }
+            }
+
+            #text-more-box {
+                display: none;
+
+                &:checked {
+                    ~.text-content {
+                        overflow: auto;
+
+
+                        .text-more {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .form-control {
+                margin-bottom: 15px;
+
+                input {
+                    width: 100%;
+                    height: 40px;
+                    border: 0;
+                    outline: none;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 20px;
+                    border-radius: 4px;
+                }
+            }
+
+            .join-form-submit {
+                text-align: right;
+            }
+        }
+    }
+}

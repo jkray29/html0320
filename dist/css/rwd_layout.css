@@ -1,0 +1,194 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body,
+html {
+  background: #000;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 900px;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+.header .header-content {
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.header .header-content #mobile-switch-box {
+  display: none;
+}
+.header .header-content .menu ul {
+  list-style-type: none;
+  display: flex;
+}
+.header .header-content .menu ul li {
+  text-align: center;
+  margin-right: 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+}
+.header .header-content .menu ul li:hover {
+  color: rgb(47, 47, 248);
+}
+.header .header-content .menu ul li:last-child {
+  margin-right: 0;
+}
+.header .header-content .menu ul li .en {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Courier New", Courier, monospace;
+}
+.header .header-content .mobile-switch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+}
+.header .header-content .mobile-switch > span {
+  width: 30px;
+  height: 5px;
+  background: #000;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.header .header-content .mobile-switch > span:last-child {
+  margin-bottom: 0;
+}
+.header .header-content .mobile-switch:hover > span {
+  background: rgb(255, 57, 42);
+}
+
+.footer {
+  background: #fff;
+  height: 100px;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.join-form {
+  height: 100vh;
+  background-color: rgb(41, 41, 41);
+  background-image: url(../images/banner.jpeg);
+  background-size: cover;
+  position: relative;
+}
+.join-form::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.356);
+}
+.join-form .join-form-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.join-form .join-form-wrap .join-form-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(5, 47, 138);
+  color: #fff;
+  height: 350px;
+}
+.join-form .join-form-wrap .join-form-content > div {
+  width: 50%;
+  padding: 30px;
+}
+.join-form .join-form-wrap .join-form-content .join-form-left-side {
+  position: relative;
+}
+.join-form .join-form-wrap .join-form-content .join-form-left-side::before {
+  content: "";
+  position: absolute;
+  border-left: 3px dashed #fff;
+  height: calc(100% - 60px);
+  right: 0;
+  top: 30px;
+}
+.join-form .join-form-wrap .join-form-content .text-content {
+  line-height: 30px;
+  height: 75%;
+  text-align: justify;
+  overflow: hidden;
+  position: relative;
+}
+.join-form .join-form-wrap .join-form-content .text-content .text-more {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.join-form .join-form-wrap .join-form-content #text-more-box {
+  display: none;
+}
+.join-form .join-form-wrap .join-form-content #text-more-box:checked ~ .text-content {
+  overflow: auto;
+}
+.join-form .join-form-wrap .join-form-content #text-more-box:checked ~ .text-content .text-more {
+  display: none;
+}
+.join-form .join-form-wrap .join-form-content .form-control {
+  margin-bottom: 15px;
+}
+.join-form .join-form-wrap .join-form-content .form-control input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.join-form .join-form-wrap .join-form-content .join-form-submit {
+  text-align: right;
+}/*# sourceMappingURL=rwd_layout.css.map */
