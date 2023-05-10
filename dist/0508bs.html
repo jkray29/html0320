@@ -12,6 +12,41 @@
 <body>
 
     <div class="container">
+        <h1>提問</h1>
+        <form action="">
+            <div class="mb-3">
+                <label for="contact-name" class="form-label">姓名</label>
+                <input class="form-control" type="text" id="contact-name" name="name">
+            </div>
+            <div class="mb-3">
+                <label for="contact-phone" class="form-label">電話</label>
+                <input class="form-control" type="text" id="contact-phone" name="phone">
+            </div>
+            <div class="mb-3">
+                <label for="contact-email" class="form-label">信箱</label>
+                <input class="form-control" type="text" id="contact-email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="contact-type" class="form-label">類型</label>
+                <select class="form-control" id="contact-type" name="type">
+                    <option value="">選擇類型</option>
+                    <option value="1">商品問題</option>
+                    <option value="2">付款問題</option>
+                    <option value="3">收貨問題</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="contact-remark" class="form-label">留言</label>
+                <textarea name="remark" id="contact-remark" class="form-control"></textarea>
+            </div>
+            <div class="mb-3 text-end">
+                <button class="btn btn-primary">送出</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="container">
         <h1>測試</h1>
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-2">
