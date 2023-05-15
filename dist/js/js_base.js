@@ -128,6 +128,11 @@ students.push({
 });
 
 students.push({
+    name: 'Ray',
+    num: 90
+});
+
+students.push({
     name: 'Mary',
     num: 20
 });
@@ -147,3 +152,9 @@ students.forEach((student, index) => {
 
 
 console.table(students);
+
+for (let start = 1; start <= 9; start++) {
+    for (let end = 1; end <= 9; end++) {
+        console.log(`${start} * ${end} = ${start * end}`)
+    }
+}
