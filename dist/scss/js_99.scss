@@ -1,0 +1,66 @@
+@import 'reset';
+
+.container {
+    max-width: 800px;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin: auto;
+}
+
+
+.input-block {
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+
+    >div {
+        flex: 1;
+    }
+
+    input {
+        padding: 5px;
+        border: 0;
+        background: #dedede;
+        outline: 0;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 5px 10px;
+        border: 0;
+        background: #164a86;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            background: #2564ac
+        }
+    }
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th,
+    td {
+        border: 1px solid #7e7e7e;
+        padding: 5px;
+        text-align: center;
+    }
+
+    th {
+        background: #164a86;
+        color: #fff;
+    }
+
+    tbody {
+        tr:nth-child(even) td {
+            background: #dedede;
+        }
+    }
+}
