@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+
+<body>
+    <button id="say-hi-btn">Say Hi</button>
+    <div id="result"></div>
+</body>
+
+<script>
+    let sayHiBtn = document.querySelector('#say-hi-btn');
+    let timer = '';
+
+    sayHiBtn.addEventListener('click', () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            let result = document.querySelector('#result');
+            result.innerHTML = 'Hi';
+            console.log('Hi');
+        }, 5000)
+        console.log(timer)
+    })
+</script>
+
+</html>
