@@ -21,22 +21,22 @@ const toLevel = (number) => {
 }
 
 const calcLevel = () => {
-    let unmber = document.querySelector('#unmber');
+    let number = document.querySelector('#number');
 
-    if (!unmber) {
+    if (!number) {
         alert('沒有輸入框');
         return;
     }
 
-    if (!unmber.value) {
+    if (!number.value) {
         alert('請輸入分數');
         return;
     }
 
     let response = document.querySelector('#response');
-    response.innerHTML = `您的等級為： ${toLevel(unmber.value)}`;
-    unmber.value = '';
-    unmber.focus();
+    response.innerHTML = `您的等級為： ${toLevel(number.value)}`;
+    number.value = '';
+    number.focus();
 }
 
 
