@@ -1,0 +1,28 @@
+@import 'reset';
+
+.container {
+    max-width: 800px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.clock {
+    margin-top: 30px;
+    display: flex;
+
+    >li {
+        width: 12.5%;
+        background: #000;
+        color: #fff;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 800;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
