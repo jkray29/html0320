@@ -1,0 +1,100 @@
+@import 'reset';
+
+[v-cloak] {
+    display: none;
+}
+
+.container {
+    max-width: 800px;
+    height: 100%;
+    position: relative;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.slogan {
+    background: #2c5fbd;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.todo-input {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+    >label {
+        margin-right: 15px;
+    }
+
+    >input {
+        flex: 1;
+        height: 36px;
+        outline: 0;
+        padding: 0 15px;
+        border: 0;
+        border-bottom: 1px solid #000;
+        font-size: 30px;
+    }
+
+    >button {
+        padding: 10px 20px;
+        border: 0;
+        background: #22ac2e;
+        color: #fff;
+        margin-left: 15px;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            background: #187e21;
+        }
+    }
+}
+
+.pending-item {
+    input[type="checkbox"]:checked~label {
+        text-decoration: line-through;
+    }
+
+    >ul li {
+        padding: 10px;
+        background: #ff6123;
+        color: #fff;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: #b13d10;
+        }
+    }
+}
+
+.done-item {
+    >ul li {
+        padding: 10px;
+        background: #31dfab;
+        color: #fff;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: #1c9e77;
+        }
+    }
+}
+
+.todo-status {
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    >div {
+        width: calc(50% - 8px);
+        border: 1px solid #dedede;
+        padding: 15px;
+    }
+}
