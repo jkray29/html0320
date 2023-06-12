@@ -13,6 +13,10 @@
     <div id="app" v-cloak>
         <div class="container" style="margin-top:15px;">
             <h1 class="slogan">TODO LIST</h1>
+            <div class="cloud-func">
+                <button class="cloud-save" @click="doSaveCloud">雲端儲存</button>
+                <button class="cloud-load" @click="doLoadCloud">雲端載入</button>
+            </div>
             <div class="todo-input">
                 <label for="item-name">項目名稱</label>
                 <input type="text" id="item-name" v-model="itemValue" ref="itemValue">
@@ -22,7 +26,7 @@
                 <div class="pending-item">
                     <h3 class="slogan">代辦清單</h3>
                     <ul id="pending-item">
-                        <li v-for="(item, itemIndex) in pending">
+                        <li v-for="(item, itemIndex) in pending" @click="toDone(itemIndex)">
                             <label for="">{{ item }}</label>
                             <i @click="doRemove(itemIndex)">&times;</i>
                         </li>
