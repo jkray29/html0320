@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        .active {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="account" value="123">
+    <input type="checkbox" id="agree">
+
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+    <div class="item">item 4</div>
+    <div class="item">item 5</div>
+</body>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script>
+    // 使用 closure 避免 $ 被複寫
+    (($) => {
+        let account = $('#account').val();
+        // let account = undefined;
+        // try {
+        //     let account = document.querySelector('#account').value;
+        // } catch (e) { }
+        let items = $('.item');
+        // let items = document.querySelectorAll('.item');
+        items.each((index, item) => {
+            console.log(index, $(item).html());
+        })
+        $('#account').on('keyup', (e) => {
+            console.log(e);
+        })
+        // $('#account').addClass('active');
+        // setTimeout(() => {
+        //     $('#account').removeClass('active');
+        // }, 3000);
+        setInterval(() => {
+            console.log($('#account').hasClass('active'));
+            $('#account').toggleClass('active');
+        }, 1000)
+
+        setTimeout(() => {
+            $('#agree').prop('checked', true);
+        }, 3000)
+
+
+
+    })(jQuery)
+
+</script>
+
+</html>
