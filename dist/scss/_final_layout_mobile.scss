@@ -1,0 +1,47 @@
+@media screen and (max-width: 800px) {
+    .header {
+
+        .header-logo {
+            flex: 1;
+        }
+
+        .header-mobile-switch {
+            display: flex;
+        }
+
+        .container {}
+
+        .header-menu {
+            display: none;
+        }
+
+        .header-icon {}
+
+        .header-lang {
+            display: none;
+        }
+    }
+
+    #mobile-checkbox {
+        &:checked~.header-mobile-switch {
+            >span {
+                background: rgb(224, 48, 48);
+
+                &:first-child {
+                    transform: rotate(45deg);
+                    top: 9px;
+                }
+
+                &:nth-child(2) {
+                    transition: none;
+                    visibility: hidden;
+                }
+
+                &:last-child {
+                    transform: rotate(-45deg);
+                    top: -9px;
+                }
+            }
+        }
+    }
+}

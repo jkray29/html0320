@@ -8,6 +8,10 @@
     position: relative;
 }
 
+#mobile-checkbox {
+    display: none;
+}
+
 .header {
     height: 80px;
     background: #dedede;
@@ -18,6 +22,25 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    .header-mobile-switch {
+        display: none;
+        width: 30px;
+        flex-direction: column;
+        gap: 5px;
+        margin-right: 15px;
+        cursor: pointer;
+
+        >span {
+            position: relative;
+            width: 100%;
+            height: 4px;
+            background: #000;
+            transition: 0.3s;
+        }
+    }
+
+
 
     .header-menu {
         display: flex;
@@ -38,6 +61,7 @@
     text-align: center;
 
     .footer-social {
+        font-size: 20px;
         margin-top: 30px;
         margin-bottom: 30px;
         display: flex;
@@ -45,4 +69,16 @@
         justify-content: center;
         gap: 30px;
     }
+
+    .footer-copyright {
+        margin-top: 30px;
+        font-size: 14px;
+    }
 }
+
+.page {
+    height: 100vh;
+}
+
+
+@import 'final_layout_mobile';
