@@ -153,11 +153,17 @@ body {
 .slider-block .slider .slider-item {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 .slider-block .slider .slider-item li {
   position: relative;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
 }
 .slider-block .slider .slider-item li .slider-bg {
   position: absolute;
@@ -190,6 +196,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.slider-block .slider .slider-item li.active {
+  opacity: 1;
 }
 
 .page {

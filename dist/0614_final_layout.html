@@ -55,7 +55,7 @@
         <div class="slider">
             <ul class="slider-item">
                 <template v-for="(item, itemIndex) in items">
-                    <li>
+                    <li :class="{active: currentIndex == itemIndex}">
                         <div class="slider-bg" :style="{'background-image': `url(${item.bg})`}"></div>
                         <div class="slider-content">
                             <div class="slider-title">{{ item.title }}</div>
