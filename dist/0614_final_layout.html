@@ -50,28 +50,28 @@
             <div class="header-lang">EN</div>
         </div>
     </div>
-    <div class="silder-block">
-        <div class="slider-block">
-            <div class="slider">
-                <ul class="slider-item">
-                    <template v-for="(item, itemIndex) in items">
-                        <li>
-                            <div class="slider-bg"></div>
-                            <div class="slider-content">
-                                <div class="slider-title">{{ item.title }}</div>
-                                <div class="silder-subtitle">{{ item.subtitle }}</div>
-                            </div>
-                        </li>
-                    </template>
-                </ul>
-                <div class="slider-menu">
-                    <template v-for="(item, itemIndex) in items">
-                        <div>{{ itemIndex }}</div>
-                    </template>
-                </div>
+
+    <div class="slider-block" id="app-slider">
+        <div class="slider">
+            <ul class="slider-item">
+                <template v-for="(item, itemIndex) in items">
+                    <li>
+                        <div class="slider-bg" :style="{'background-image': `url(${item.bg})`}"></div>
+                        <div class="slider-content">
+                            <div class="slider-title">{{ item.title }}</div>
+                            <div class="silder-subtitle">{{ item.subtitle }}</div>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+            <div class="slider-menu">
+                <template v-for="(item, itemIndex) in items">
+                    <div :class="{active: currentIndex == itemIndex}" @click="setIndex(itemIndex)">{{ itemIndex }}</div>
+                </template>
             </div>
         </div>
     </div>
+
     <div class="footer">
         <div class="container">
             <div>
