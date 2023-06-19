@@ -1,0 +1,53 @@
+.slider-block {
+    height: 100vh;
+    background: #000;
+    color: #fff;
+
+
+    .slider {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .slider-menu {
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            >div {
+                width: 10px;
+                height: 10px;
+                background: #fff;
+                border-radius: 100px;
+                position: relative;
+                text-indent: -999em;
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    border: 2px solid #fff;
+                    border-radius: 100px;
+                    position: absolute;
+                    top: -5px;
+                    left: -5px;
+                }
+
+                &:hover {
+                    background: red;
+
+                    &::after {
+                        border-color: red;
+                    }
+                }
+            }
+        }
+    }
+}

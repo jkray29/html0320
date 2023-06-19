@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 a {
@@ -25,8 +26,12 @@ a {
 
 .header {
   height: 80px;
-  background: #dedede;
+  background: #fff;
   font-weight: 700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .header .container {
   display: flex;
@@ -48,9 +53,23 @@ a {
   background: #000;
   transition: 0.3s;
 }
-.header .header-menu {
+.header .header-menu ul {
   display: flex;
   gap: 30px;
+}
+.header .header-menu ul li {
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.header .header-menu ul li.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  left: 0;
+  bottom: -5px;
 }
 .header .header-icon {
   font-size: 20px;
@@ -78,6 +97,53 @@ a {
   font-size: 14px;
 }
 
+.slider-block {
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+.slider-block .slider {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-block .slider .slider-menu {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.slider-block .slider .slider-menu > div {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 100px;
+  position: relative;
+  text-indent: -999em;
+  cursor: pointer;
+}
+.slider-block .slider .slider-menu > div::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+.slider-block .slider .slider-menu > div:hover {
+  background: red;
+}
+.slider-block .slider .slider-menu > div:hover::after {
+  border-color: red;
+}
+
 .page {
   height: 100vh;
 }
@@ -89,7 +155,17 @@ a {
   .header .header-mobile-switch {
     display: flex;
   }
-  .header .header-menu {
+  .header .header-menu ul {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #fff;
     display: none;
   }
   .header .header-lang {
@@ -109,5 +185,8 @@ a {
   #mobile-checkbox:checked ~ .header-mobile-switch > span:last-child {
     transform: rotate(-45deg);
     top: -9px;
+  }
+  #mobile-checkbox:checked ~ .header-menu ul {
+    display: flex;
   }
 }/*# sourceMappingURL=final_layout.css.map */
