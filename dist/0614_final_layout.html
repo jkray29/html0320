@@ -53,17 +53,21 @@
     <div class="silder-block">
         <div class="slider-block">
             <div class="slider">
-                <ul>
-                    <li>
-                        <div class="slider-bg"></div>
-                        <div class="slider-title">TITLE</div>
-                        <div class="silder-subtitle">SUB TITLE</div>
-                    </li>
+                <ul class="slider-item">
+                    <template v-for="(item, itemIndex) in items">
+                        <li>
+                            <div class="slider-bg"></div>
+                            <div class="slider-content">
+                                <div class="slider-title">{{ item.title }}</div>
+                                <div class="silder-subtitle">{{ item.subtitle }}</div>
+                            </div>
+                        </li>
+                    </template>
                 </ul>
                 <div class="slider-menu">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
+                    <template v-for="(item, itemIndex) in items">
+                        <div>{{ itemIndex }}</div>
+                    </template>
                 </div>
             </div>
         </div>
@@ -102,5 +106,7 @@
         </div>
     </div>
 </body>
+<script src="js/vue3.js"></script>
+<script src="js/final_layout.js"></script>
 
 </html>
