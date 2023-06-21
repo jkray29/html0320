@@ -1,0 +1,40 @@
+.patent-design {
+    width: 100%;
+    height: 100vh;
+    background: #dedede;
+    background-image: url(../image/final_layout/exclusivedesign_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .design-wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        .design-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+    .design-title {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .design-text {
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .design-popup {
+        display: none;
+    }
+}
